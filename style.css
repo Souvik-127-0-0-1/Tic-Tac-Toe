@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    background-color: #F0F8FF; /* Light blue background */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #FF4500; /* Orangered */
+    margin-bottom: 5px; /* Positive margin for consistency */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+p {
+    margin-bottom: 10px; /* Positive margin for consistency */
+}
+
+/* Main Container */
+#main {
+    text-align: center;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Game Instructions */
+#ins {
+    color: #1E90FF; /* Dodgerblue */
+    margin-bottom: 20px;
+}
+
+/* UI Container */
+.ui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Grid Rows */
+.row {
+    display: flex;
+}
+
+/* Grid Cells */
+.cell {
+    border: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #d3d3d3; /* Light gray border for all cells */
+}
+
+.cell:hover {
+    background-color: #f0f0f0; /* Light hover effect */
+}
+
+.cell:active {
+    outline: none;
+    background-color: #d3d3d3; /* Darker active effect */
+}
+
+/* Specific Cell Borders for 3*3 Grid */
+#b1 { border-bottom: 2px solid #D4C9C9; border-right: 2px solid gray; }
+#b2 { border-bottom: 2px solid gray; border-right: 2px solid gray; border-left: 2px solid gray; }
+#b3 { border-bottom: 2px solid gray; border-left: 2px solid gray; }
+#b4 { border-top: 2px solid gray; border-bottom: 2px solid gray; border-right: 2px solid gray; }
+#b5 { border: 2px solid gray; }
+#b6 { border-top: 2px solid gray; border-bottom: 2px solid gray; border-left: 2px solid gray; }
+#b7 { border-top: 2px solid gray; border-right: 2px solid gray; }
+#b8 { border-top: 2px solid gray; border-right: 2px solid gray; border-left: 2px solid gray; }
+#b9 { border-top: 2px solid gray; border-left: 2px solid gray; }
+
+/* Reset Button */
+#but {
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 1px solid #1E90FF;
+    margin-left: auto;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFFF;
+    color: #1E90FF;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+#but:hover {
+    background-color: #1E90FF;
+    color: #FFFFFF;
+}
+
+/* Player Turn Space */
+#print {
+    font-family: 'Arial', sans-serif;
+    color: #1E90FF;
+    font-size: 20px;
+    margin-top: 20px;
+}
